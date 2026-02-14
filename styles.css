@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.login-container {
+    position: relative;
+    width: 420px;
+    padding: 40px 40px;
+    background: #e0e5ec;
+    border-radius: 30px;
+    box-shadow: 14px 14px 28px #a3b1c6,
+                -14px -14px 28px #ffffff;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.forgot-pass {
+    display: block;
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-link a {
+    color: #40a9c3;
+    text-decoration: none;
+    font-weight: 600;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto ;
+    border-radius: 50%;
+    background: #e0e5ec;
+    background: url('https://picsum.photos/200');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 6px 6px 10px #a3b1c6,
+                -6px -6px 10px #ffffff;
+    border: 5px solid #e0e5ec;
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    box-shadow: inset 6px 6px 10px #a3b1c6,
+                inset -6px -6px 10px #ffffff;
+    transform: scale(0.98);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    border: none;
+    outline: none;
+    background: #e0e5ec;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 10px #a3b1c6,
+                inset -6px -6px 10px #ffffff;
+    font-size: 1rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+    box-shadow: inset 4px 4px 8px #a3b1c6,
+                inset -4px -4px 8px #ffffff;
+    color: #333;
+}
+
+.input-field input:focus ~ i {
+    color: #40a9c3;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #e0e5ec;
+    color: #40a9c3;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 8px 8px 16px #a3b1c6,
+                -8px -8px 16px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #3a97af;
+    transform: translateY(-2px);
+    box-shadow: 10px 10px 20px #a3b1c6,
+                -10px -10px 20px #ffffff;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: inset 4px 4px 8px #a3b1c6,
+                inset -4px -4px 8px #ffffff;
+}
+
+.options {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.options a {
+    color: #40a9c3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.options a:hover {
+    color: #3a97af;
+    text-decoration: underline;
+}
+
+/* ================= LARGE SCREENS ================= */
+
+@media screen and (max-width: 1024px) {
+    .login-container {
+        width: 70%;
+        max-width: 700px;
+        padding: 75px 45px;
+    }
+
+    h2 { font-size: 2.1rem; }
+
+    .profile-img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .input-field input {
+        padding: 18px 24px 18px 60px;
+        font-size: 1.05rem;
+    }
+
+    .btn {
+        padding: 18px;
+        font-size: 1.15rem;
+    }
+}
+
+/* ================= GENERIC TABLETS ================= */
+
+@media screen and (max-width: 900px) {
+    .login-container {
+        width: 80%;
+        max-width: 650px;
+        padding: 80px 50px;
+    }
+
+    h2 { font-size: 2.2rem; }
+
+    .profile-img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 480px) {
+    .login-container {
+        width: 92%;
+        padding: 40px 20px;
+    }
+
+    h2 { font-size: 1.4rem; }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .input-field input {
+        padding: 14px 16px 14px 45px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+
+}
+
+
+/* Samsung Tab S7 (~800px) */
+@media screen and (min-width: 790px) and (max-width: 809px) {
+    .login-container {
+        width: 78%;
+        max-width: 720px;
+        padding: 85px 55px;
+    }
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.forgot-pass {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #666;
+    text-decoration: none;
+}
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    h2 { font-size: 2.3rem;padding: 30px 0; }
+
+    .input-field input {
+        padding: 25px 28px 25px 85px;
+        font-size: 1.15rem;
+    }
+    .input-field i{
+        font-size: 2rem;
+        left:35px;
+    }
+    .btn {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+/* iPad Air 4 (820px) */
+@media screen and (min-width: 810px) and (max-width: 829px) {
+    .login-container {
+        width: 76%;
+        max-width: 740px;
+        padding: 90px 60px;
+    }
+
+    .profile-img {
+        width: 135px;
+        height: 135px;
+    }
+
+    h2 { font-size: 2.4rem; }
+}
+
+/* iPad Pro 11 (834px) */
+@media screen and (min-width: 830px) and (max-width: 849px) {
+    .login-container {
+        width: 74%;
+        max-width: 760px;
+        padding: 95px 65px;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    h2 { font-size: 2.5rem; }
+}
+
+/* Galaxy Fold 2 Unfolded (~884px) */
+@media screen and (min-width: 870px) and (max-width: 899px) {
+    .login-container {
+        width: 72%;
+        max-width: 780px;
+        padding: 100px 70px;
+    }
+
+    .profile-img {
+        width: 145px;
+        height: 145px;
+    }
+
+    h2 { font-size: 2.6rem; }
+}
