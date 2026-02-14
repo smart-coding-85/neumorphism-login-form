@@ -4,7 +4,7 @@
  
  ## Preview
  
- ![Preview](https://via.placeholder.com/1200x800?text=Neumorphism+Login+Form+Preview)
+![Preview](preview.png)
  
  ## Features
  
